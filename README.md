@@ -1,22 +1,50 @@
-# Protein Tracker — Streamlit UI
+# Protein Tracker
 
-This workspace contains a simple Streamlit front-end for the existing protein tracker MySQL database.
+## Overview
 
-Setup
+Protein Tracker is a Python-based application that helps users monitor their daily protein intake. The application stores protein information for various foods in a MySQL database and calculates the total protein consumed throughout the day using an interactive Streamlit interface.
 
-1. Create (or ensure) the MySQL database `protien_tracker` with table `pro_content` matching the original project.
-2. Install Python dependencies:
+## Features
+
+* Calculate total daily protein intake
+* Store and retrieve food protein data using MySQL
+* Interactive Streamlit web interface
+* Supports multiple food entries per day
+* Easy-to-use nutrition tracking system
+
+## Technologies Used
+
+* Python
+* MySQL
+* Streamlit
+
+## Installation
+
+1. Install required packages:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run
+2. Configure the MySQL database.
+
+3. Run the application:
 
 ```bash
-streamlit run "streamlit_app.py"
+streamlit run streamlit_app.py
 ```
 
-Notes
-- The app connects using the same credentials used in the original script (host=localhost, user=root, passwd=ridhan). Update `streamlit_app.py` if you need different credentials.
-- For eggs the database is expected to store protein per egg (the original console app treats eggs as per-unit).
+## Future Improvements
+
+* User authentication
+* Daily and weekly intake reports
+* Nutrition analytics dashboard
+* Cloud database integration
+
+## Author
+
+Sanjeev Kumar V
+
+B.Tech Mechatronics and Automation Engineering
+
+VIT Chennai
